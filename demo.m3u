@@ -1,27 +1,27 @@
 #EXTM3U
-#EXTINF:-1 group-title="Actualités",France 24
-https://static.france24.com/live/F24_FR_LO_HLS/live_ios.m3u8
-#EXTINF:-1 group-title="Actualités",France 24 English
-https://static.france24.com/live/F24_EN_LO_HLS/live_ios.m3u8
-#EXTINF:-1 group-title="Actualités",France 24 Español
-https://static.france24.com/live/F24_ES_LO_HLS/live_ios.m3u8
-#EXTINF:-1 group-title="Actualités",France 24 Arabic
-https://static.france24.com/live/F24_AR_LO_HLS/live_ios.m3u8
-#EXTINF:-1 group-title="Actualités",DW English
+#EXTINF:-1 tvg-id="dw-english" group-title="Info",DW English
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
-#EXTINF:-1 group-title="Actualités",DW Deutsch
+#EXTINF:-1 tvg-id="dw-deutsch" group-title="Info",DW Deutsch
 https://dwamdstream101.akamaized.net/hls/live/2015524/dwstream101/index.m3u8
-#EXTINF:-1 group-title="Actualités",DW Español
+#EXTINF:-1 tvg-id="dw-arabic" group-title="Info",DW Arabic
 https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
-#EXTINF:-1 group-title="Actualités",Al Jazeera Arabic
-https://live-hls-web-aja.getaj.net/AJA/index.m3u8
-#EXTINF:-1 group-title="Actualités",CBS News
-https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
-#EXTINF:-1 group-title="Espace et sciences",NASA TV Public
-https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
-#EXTINF:-1 group-title="Espace et sciences",NASA TV Media
-https://ntv2.akamaized.net/hls/live/2013923/NASA-NTV2-HLS/master.m3u8
-#EXTINF:-1 group-title="Divertissement",Red Bull TV
+#EXTINF:-1 tvg-id="aje" group-title="Info",Al Jazeera English
+https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+#EXTINF:-1 tvg-id="aja" group-title="Info",Al Jazeera Arabic
+https://live-hls-apps-aja-fa.getaj.net/AJA/index.m3u8
+#EXTINF:-1 tvg-id="bloomberg-us" group-title="Info",Bloomberg TV+ US
+https://www.bloomberg.com/media-manifest/streams/us.m3u8
+#EXTINF:-1 tvg-id="bloomberg-eu" group-title="Info",Bloomberg TV+ Europe
+https://www.bloomberg.com/media-manifest/streams/eu.m3u8
+#EXTINF:-1 tvg-id="redbull-tv" group-title="Documentaire",Red Bull TV
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-#EXTINF:-1 group-title="Divertissement",Arirang TV
+#EXTINF:-1 tvg-id="arirang" group-title="Documentaire",Arirang TV
 https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="voyage-lune-1902" group-title="Films",Le Voyage dans la Lune (1902)
+https://archive.org/download/ATripToTheMoon1902/A%20Trip%20to%20the%20Moon%20(1902).mp4
+#EXTINF:-1 tvg-id="caligari-1920" group-title="Films",Le Cabinet du docteur Caligari (1920)
+https://archive.org/download/DasKabinettdesDoktorCaligariTheCabinetofDrCaligari/The_Cabinet_of_Dr._Caligari_512kb.mp4
+#EXTINF:-1 tvg-id="nosferatu-1922" group-title="Films",Nosferatu (1922)
+https://archive.org/download/Nosferatu_most_complete_version_93_mins./Nosferatu_1922_Symphony_of_Horror_512kb.mp4
+#EXTINF:-1 tvg-id="potemkine-1925" group-title="Films",Le Cuirassé Potemkine (1925)
+https://archive.org/download/BattleshipPotemkin/Battleship_Potemkin_512kb.mp4
