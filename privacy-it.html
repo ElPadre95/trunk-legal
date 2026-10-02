@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informativa sulla privacy &mdash; Trunk</title>
+<style>
+    :root{color-scheme:light}
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{
+      margin:0;background:#FBFAF8;color:#24211D;
+      font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:40rem;margin:0 auto;padding:48px 24px 64px}
+    .bandeau{display:flex;justify-content:space-between;align-items:baseline;
+      gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid #E5E1DA}
+    .marque{font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+      font-size:13px;color:#8A6D2F}
+    .bandeau a{font-size:14px;color:#6B6660;text-decoration:none;
+      border-bottom:1px solid #D8D3CA}
+    .bandeau a:hover{color:#24211D;border-bottom-color:#8A6D2F}
+    h1{font-size:clamp(26px,6vw,34px);line-height:1.2;margin:34px 0 8px;
+      letter-spacing:-.01em;text-wrap:balance}
+    h2{font-size:13px;letter-spacing:.09em;text-transform:uppercase;
+      color:#8A6D2F;margin:36px 0 12px;font-weight:700}
+    .maj{margin:0 0 34px;font-size:14px;color:#6B6660}
+    p{margin:0 0 18px}
+    ul{margin:0 0 18px;padding-left:22px}
+    li{margin:0 0 8px}
+    .liens{list-style:none;padding:0;margin:28px 0 0}
+    .liens li{margin:0 0 14px}
+    .liens a{font-size:18px;color:#24211D;text-decoration:none;font-weight:600;
+      border-bottom:2px solid #E5E1DA}
+    .liens a:hover{border-bottom-color:#8A6D2F}
+    .liens span{display:block;font-size:14px;color:#6B6660;font-weight:400;
+      margin-top:3px}
+    footer{margin-top:48px;padding-top:22px;border-top:1px solid #E5E1DA;
+      font-size:14px;color:#6B6660}
+    footer p{margin:0 0 5px}
+    footer a{color:#6B6660}
+    .langues{display:flex;gap:13px;flex-wrap:wrap;align-items:baseline}
+    .langues span{font-size:14px;color:#24211D;font-weight:600}
+    @media(max-width:480px){.wrap{padding:32px 18px 48px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bandeau">
+    <span class="marque">Trunk</span>
+    <nav class="langues">
+      <a href="confidentialite.html">Français</a>
+      <a href="privacy.html">English</a>
+      <a href="privacy-es.html">Español</a>
+      <a href="privacy-de.html">Deutsch</a>
+      <span>Italiano</span>
+      <a href="privacy-pt.html">Português</a>
+    </nav>
+  </div>
+  <h1>Informativa sulla privacy</h1>
+  <p class="maj">Ultimo aggiornamento: 14 settembre 2026</p>
+  <p>Trunk non raccoglie alcun dato personale. Non c&rsquo;è nessun account, nessuna registrazione, nessun server che ci appartenga.</p>
+
+  <h2>Cosa viene conservato sul tuo dispositivo</h2>
+  <ul>
+    <li>Le tue playlist: nome, indirizzo del server, dati dell&rsquo;abbonamento</li>
+    <li>Una cache del catalogo: canali, film e serie della tua fonte</li>
+    <li>I tuoi preferiti, i canali da una parte, film e serie dall&rsquo;altra</li>
+    <li>La tua cronologia e il tuo avanzamento di riproduzione</li>
+    <li>I titoli che hai finito</li>
+    <li>Una cache delle schede TMDB e della guida programmi</li>
+    <li>Le tue preferenze: lingua, fonte attiva, impostazioni di riproduzione</li>
+  </ul>
+  <p>Nulla di tutto questo viene inviato da nessuna parte.</p>
+
+  <h2>Le tue credenziali</h2>
+  <p>Il nome utente e la password della tua fonte sono conservati nel Portachiavi iOS, cifrato dal sistema. Anche la cache del catalogo è cifrata.</p>
+
+  <h2>Cosa contatta l&rsquo;applicazione</h2>
+  <ul>
+    <li>Il server del tuo fornitore IPTV, di cui inserisci tu stesso l&rsquo;indirizzo. Riceve le tue credenziali e vede cosa riproduci. Trunk non ha alcun controllo su ciò che ne fa: consulta le sue condizioni.</li>
+    <li>TMDB, per le locandine, le trame e i metadati. Gli vengono inviati solo un titolo o un identificativo di film, mai un&rsquo;informazione che ti riguarda.</li>
+    <li>YouTube, per le miniature e la riproduzione dei trailer. Un trailer viene riprodotto in una vista web di YouTube: deposita cookie e trasmette il tuo indirizzo IP a Google. È l&rsquo;unico punto dell&rsquo;applicazione in cui ciò accade.</li>
+    <li>Un endpoint di test di connettività di Google e un endpoint di test di velocità di Cloudflare, usati unicamente per diagnosticare un problema di riproduzione. Ricevono il tuo indirizzo IP, nient&rsquo;altro.</li>
+  </ul>
+
+  <h2>Nessun tracciamento</h2>
+  <p>Nessun tracciamento, nessuna pubblicità, nessuna telemetria, nessuno strumento di misurazione del pubblico.</p>
+
+  <h2>Eliminazione</h2>
+  <p>Disinstallare l&rsquo;applicazione cancella i dati conservati sul dispositivo. Le credenziali salvate nel Portachiavi iOS sopravvivono &mdash; è il comportamento del sistema &mdash; e vengono cancellate al primo avvio di una nuova installazione.</p>
+  <footer>
+    <p>Editore: Aissam Ihaddadene</p>
+    <p>Contatto: <a href="mailto:contact@trunkiptv.app">contact@trunkiptv.app</a></p>
+    <p>Ultimo aggiornamento: 14 settembre 2026</p>
+  </footer>
+</div>
+</body>
+</html>
