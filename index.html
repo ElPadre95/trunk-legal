@@ -2,74 +2,222 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trunk — Informations légales</title>
-<style>
-    :root{color-scheme:light}
-    *{box-sizing:border-box}
-    html{-webkit-text-size-adjust:100%}
-    body{
-      margin:0;background:#FBFAF8;color:#24211D;
-      font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      -webkit-font-smoothing:antialiased;
-    }
-    .wrap{max-width:40rem;margin:0 auto;padding:48px 24px 64px}
-    .bandeau{display:flex;justify-content:space-between;align-items:baseline;
-      gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid #E5E1DA}
-    .marque{font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-      font-size:13px;color:#8A6D2F}
-    .bandeau a{font-size:14px;color:#6B6660;text-decoration:none;
-      border-bottom:1px solid #D8D3CA}
-    .bandeau a:hover{color:#24211D;border-bottom-color:#8A6D2F}
-    h1{font-size:clamp(26px,6vw,34px);line-height:1.2;margin:34px 0 8px;
-      letter-spacing:-.01em;text-wrap:balance}
-    h2{font-size:13px;letter-spacing:.09em;text-transform:uppercase;
-      color:#8A6D2F;margin:36px 0 12px;font-weight:700}
-    .maj{margin:0 0 34px;font-size:14px;color:#6B6660}
-    p{margin:0 0 18px}
-    ul{margin:0 0 18px;padding-left:22px}
-    li{margin:0 0 8px}
-    .liens{list-style:none;padding:0;margin:28px 0 0}
-    .liens li{margin:0 0 14px}
-    .liens a{font-size:18px;color:#24211D;text-decoration:none;font-weight:600;
-      border-bottom:2px solid #E5E1DA}
-    .liens a:hover{border-bottom-color:#8A6D2F}
-    .liens span{display:block;font-size:14px;color:#6B6660;font-weight:400;
-      margin-top:3px}
-    footer{margin-top:48px;padding-top:22px;border-top:1px solid #E5E1DA;
-      font-size:14px;color:#6B6660}
-    footer p{margin:0 0 5px}
-    footer a{color:#6B6660}
-    @media(max-width:480px){.wrap{padding:32px 18px 48px}body{font-size:16px}}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0908">
+<title>Trunk — Lecteur IPTV pour iPhone</title>
+<meta name="description" content="Trunk lit votre playlist IPTV, M3U ou Xtream Codes, et en fait une app de streaming : des affiches, des fiches, un guide TV. Sans compte, sans publicité, sans suivi.">
+<link rel="icon" type="image/png" sizes="32x32" href="m/site/icone-32.png">
+<link rel="apple-touch-icon" href="m/site/icone-180.png">
+<link rel="stylesheet" href="m/site/site.css?v=1791157100">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.trunkSite)document.querySelectorAll('.apparait').forEach(function(e){e.classList.add('vu')})},3000)</script>
 </head>
-<body>
-<div class="wrap">
-  <div class="bandeau">
-    <span class="marque">Trunk</span>
+<body data-haut="1" data-plaques="legendes">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-catalogue" viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="10" rx="1.5"/><rect x="14" y="4" width="7" height="10" rx="1.5"/><path d="M3 18h7M14 18h7"/></symbol><symbol id="i-fiche" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol><symbol id="i-recherche" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></symbol><symbol id="i-categories" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></symbol><symbol id="i-age" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9.5 12.5l2 2 3.5-4"/></symbol><symbol id="i-tendances" viewBox="0 0 24 24"><path d="M4 18l5-6 4 3 7-8"/><path d="M15 7h5v5"/></symbol><symbol id="i-bande" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9.5v5l4-2.5z"/></symbol><symbol id="i-similaires" viewBox="0 0 24 24"><rect x="3" y="8" width="11" height="12" rx="2"/><path d="M8 5h10a2 2 0 0 1 2 2v10"/></symbol><symbol id="i-liste" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-guide" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 13h8M8 16h5"/></symbol><symbol id="i-favoris" viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></symbol><symbol id="i-historique" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-langues" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></symbol><symbol id="i-nuage" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></symbol><symbol id="i-bientot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5h4"/></symbol><symbol id="i-lecteur" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.8v6.4l5-3.2z"/></symbol><symbol id="i-reprise" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/><path d="M12 8v4l3 2"/></symbol><symbol id="i-soustitres" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 12h3M12 12h5M7 15h6M15 15h2"/></symbol><symbol id="i-diffuser" viewBox="0 0 24 24"><path d="M3 8V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-6"/><path d="M3 12a7 7 0 0 1 7 7M3 16a3 3 0 0 1 3 3"/><path d="M3 19.5h.01"/></symbol><symbol id="i-vitesse" viewBox="0 0 24 24"><path d="M4.5 17a8.5 8.5 0 1 1 15 0"/><path d="M12 13l4-4"/></symbol><symbol id="i-verrou" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol><symbol id="i-reconnexion" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.9-3.5M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.9 3.5M20 20v-4h-4"/></symbol><symbol id="i-fluidite" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol><symbol id="i-depannage" viewBox="0 0 24 24"><path d="M3 12h4l2-5 4 10 2-5h6"/></symbol><symbol id="i-lien" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol><symbol id="i-playlists" viewBox="0 0 24 24"><path d="M4 7l8-4 8 4-8 4z"/><path d="M4 12l8 4 8-4M4 17l8 4 8-4"/></symbol><symbol id="i-cle" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l3 3M14 9l2 2"/></symbol><symbol id="i-bouclier" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><rect x="9.5" y="11" width="5" height="4.5" rx="1"/><path d="M10.5 11V9.8a1.5 1.5 0 0 1 3 0V11"/></symbol><symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><path d="M12 19.5h.01"/></symbol><symbol id="i-accueil" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></symbol><symbol id="i-fonctions" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></symbol><symbol id="i-direct" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8"/></symbol><symbol id="i-tarif" viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></symbol><symbol id="i-questions" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7M12 17h.01"/></symbol><symbol id="i-cadenas" viewBox="0 0 24 24"><path d="M7 10V7.5a5 5 0 0 1 10 0V10h.5A1.5 1.5 0 0 1 19 11.5v8A1.5 1.5 0 0 1 17.5 21h-11A1.5 1.5 0 0 1 5 19.5v-8A1.5 1.5 0 0 1 6.5 10zm2.2 0h5.6V7.5a2.8 2.8 0 0 0-5.6 0z"/></symbol></defs></svg>
+
+<header class="nav" id="nav">
+  <a class="marque" href="#accueil"><img src="m/icone.webp" alt="">Trunk</a>
+  <nav class="liens" aria-label="Sections">
+    <a href="#fonctions">Fonctions</a><a href="#catalogue">Catalogue</a><a href="#direct">Direct</a>
+    <a href="#donnees">Vie privée</a><a href="#tarif">Tarif</a><a href="#questions">Questions</a>
+  </nav>
+  <span class="bientot">Bientôt sur l'App Store</span>
+  <div class="langue">
+    <button class="globe" id="globe" aria-haspopup="true" aria-expanded="false" aria-controls="langues" aria-label="Langue : français"><svg aria-hidden="true"><use href="#i-langues"/></svg><span>FR</span></button>
+    <div class="langues verre" id="langues" hidden>
+      <a href="#" lang="fr" aria-current="true">Français<svg class="coche" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></a>
+      <a lang="en" aria-disabled="true">English</a><a lang="es" aria-disabled="true">Español</a><a lang="de" aria-disabled="true">Deutsch</a>
+      <a lang="it" aria-disabled="true">Italiano</a><a lang="pt-BR" aria-disabled="true">Português (Brasil)</a>
+    </div>
   </div>
-  <h1>Informations légales</h1>
-  <p class="maj">Dernière mise à jour : 14 septembre 2026</p>
-  <ul class="liens">
-    <li><a href="confidentialite.html">Politique de confidentialité</a><span>Français</span></li>
-    <li><a href="cgu.html">Conditions d&rsquo;utilisation</a><span>Français</span></li>
-    <li><a href="privacy.html">Privacy Policy</a><span>English</span></li>
-    <li><a href="terms.html">Terms of Use</a><span>English</span></li>
-    <li><a href="privacy-es.html">Política de privacidad</a><span>Español</span></li>
-    <li><a href="terms-es.html">Condiciones de uso</a><span>Español</span></li>
-    <li><a href="privacy-de.html">Datenschutzerklärung</a><span>Deutsch</span></li>
-    <li><a href="terms-de.html">Nutzungsbedingungen</a><span>Deutsch</span></li>
-    <li><a href="privacy-it.html">Informativa sulla privacy</a><span>Italiano</span></li>
-    <li><a href="terms-it.html">Condizioni d&rsquo;uso</a><span>Italiano</span></li>
-    <li><a href="privacy-pt.html">Política de Privacidade</a><span>Português</span></li>
-    <li><a href="terms-pt.html">Termos de Uso</a><span>Português</span></li>
-  </ul>
-  <p style="margin-top:28px;font-size:15px;color:#6B6660">Les six versions font foi l&rsquo;une comme l&rsquo;autre. &mdash; All six language versions are equally authoritative.</p>
-  <footer>
-    <p>Éditeur : Aissam Ihaddadene</p>
-    <p>Contact : <a href="mailto:contact@trunkiptv.app">contact@trunkiptv.app</a></p>
-    <p>Dernière mise à jour : 14 septembre 2026</p>
-  </footer>
+</header>
+
+<div class="lumiere" aria-hidden="true"><i class="l1"></i><i class="l2"></i><i class="l3"></i></div>
+
+<main>
+<section id="accueil" class="hero" data-pastille="Accueil" data-icone="accueil">
+  <div class="mur" aria-hidden="true"><div class="mur-plan" id="mur-plan"></div></div>
+  <div class="w">
+    <div class="texte-hero">
+      <h1 class="apparait" id="slogan" data-slogans='["Votre playlist devient une app.","Chaque titre retrouve son affiche.","Vos chaînes. Vos films. Rien sur vous."]'>Votre playlist devient une app.</h1>
+      <p class="sous apparait" style="--retard:.08s">Trunk ne fournit aucun contenu. Il lit votre playlist — M3U ou Xtream Codes —, met une affiche sur chaque titre et range tout en films, en séries et en chaînes.</p>
+      <span class="capsule verre apparait" style="--retard:.16s">Bientôt sur l'App Store</span>
+    </div>
+    <div class="composition" id="composition">
+      <span class="contrejour" style="--t:var(--dore);--y:44%;--d:1000px" aria-hidden="true"></span>
+      <div class="scene" id="scene">
+      <div class="tel" id="tel-accueil"><img src="m/site/ecrans/accueil.webp" alt="L'accueil de Trunk"><span class="reperes" id="reperes" aria-hidden="true"></span></div>
+      <div class="flottant verre f-guide" data-vitesse="-.18" data-cible=".603,.932" data-ancre=".now" data-num="3">
+        <div class="chaine tf1"><img src="m/chaines/tf1.png" alt="TF1"><div><div class="nom">FR 4K- TF1 UHD</div>
+          <div class="now"><b>MAINTENANT</b><span>JT 13h</span></div><div class="barre"><i style="width:68%"></i></div>
+          <div class="suiv">Suivant : Petits plats en équilibre</div></div></div>
+      </div>
+      <div class="flottant verre f-fiche" data-vitesse="-.1" data-cible=".427,.6695" data-ancre=".regarder" data-num="2">
+        <div class="t">Abominable</div>
+        <div class="m"><span class="note">★ 7,5</span><span>2019</span><span>·</span><span>1 h 37</span><span class="g">Familial</span><span class="age">TP</span></div>
+        <div class="regarder">▶ Regarder</div>
+      </div>
+      <div class="flottant verre f-cat" data-vitesse="-.24" data-cible=".5,.087" data-ancre=".tt" data-num="1">
+        <div class="tt">Catégories</div>
+        <div class="it on">FR 4K UHD <span>12</span></div><div class="it">Cinéma <span>486</span></div><div class="it">Documentaires <span>63</span></div>
+      </div>
+      <div class="flottant verre f-zero" data-vitesse="-.3"><span><i></i>Aucun compte</span><span><i></i>Aucune pub</span><span><i></i>Aucun suivi</span></div>
+      </div>
+      <svg class="filets" id="filets" aria-hidden="true"></svg>
+    </div>
+  </div>
+</section>
+
+<section id="fonctions" class="fonctions" data-pastille="Fonctions" data-icone="fonctions"><div class="w">
+  <div class="entete">
+    <div><span class="etiquette apparait">● Fonctionnalités</span>
+      <h2 class="apparait">Tout ce que fait Trunk.</h2></div>
+    <div><p class="aide apparait">Touchez une fonction pour voir ce qu'elle fait.</p>
+      <p class="cle apparait"><span><svg class="cadenas" aria-hidden="true"><use href="#i-cadenas"/></svg>Trunk Plus</span><span><i class="rond-contour"></i>Bientôt</span></p></div>
+  </div>
 </div>
+  <div class="rangees" id="rangees">
+    <div class="rangee" data-sens="gauche"><div class="piste"><button class="fn" data-f="catalogue" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-catalogue"/></svg>Catalogue enrichi</button><button class="fn" data-f="fiches" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-fiche"/></svg>Fiches détaillées</button><button class="fn" data-f="recherche" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-recherche"/></svg>Recherche</button><button class="fn" data-f="categories" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-categories"/></svg>Catégories</button><button class="fn" data-f="age" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-age"/></svg>Classification d'âge</button><button class="fn" data-f="tendances" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-tendances"/></svg>Tendances de la semaine<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="bande-annonce" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-bande"/></svg>Bandes-annonces<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="similaires" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-similaires"/></svg>Titres similaires<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="ma-liste" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-liste"/></svg>Ma liste<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="guide" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-guide"/></svg>Guide TV</button><button class="fn" data-f="favoris" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-favoris"/></svg>Chaînes favorites<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="historique" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-historique"/></svg>Historique<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="langues" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-langues"/></svg>Six langues</button><button class="fn bientot" data-f="icloud" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-nuage"/></svg>Synchronisation iCloud</button><button class="fn bientot" data-f="ipad" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-bientot"/></svg>iPad</button></div></div>
+    <div class="rangee" data-sens="droite"><div class="piste"><button class="fn" data-f="formats" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-lecteur"/></svg>Lecteur tous formats</button><button class="fn" data-f="reprise" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-reprise"/></svg>Reprise de lecture<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="pistes" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-soustitres"/></svg>Sous-titres et pistes audio<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="airplay" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-diffuser"/></svg>AirPlay<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="vitesse" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-vitesse"/></svg>Vitesse de lecture</button><button class="fn" data-f="verrou" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-verrou"/></svg>Verrouillage de l'écran</button><button class="fn" data-f="reconnexion" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-reconnexion"/></svg>Reconnexion automatique</button><button class="fn" data-f="fluidite" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-fluidite"/></svg>Fluidité de lecture</button><button class="fn" data-f="depannage" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-depannage"/></svg>Dépannage</button><button class="fn" data-f="sources" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-lien"/></svg>M3U et Xtream Codes</button><button class="fn" data-f="playlists" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-playlists"/></svg>Playlists illimitées<svg class="cadenas" aria-label="Trunk Plus"><use href="#i-cadenas"/></svg></button><button class="fn" data-f="trousseau" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-cle"/></svg>Trousseau</button><button class="fn" data-f="chiffre" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-bouclier"/></svg>Catalogue chiffré</button><button class="fn" data-f="wifi" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-wifi"/></svg>Wi-Fi uniquement</button><button class="fn bientot" data-f="apple-tv" aria-controls="panneau"><svg class="i" aria-hidden="true"><use href="#i-bientot"/></svg>Apple TV</button></div></div>
+  </div>
+  <div class="w">
+    <div class="panneau" id="panneau" aria-hidden="true" data-gratuit="Gratuit" data-plus="Trunk Plus" data-bientot="Bientôt"><div class="cadre"><div class="verre" role="region" aria-live="polite" aria-label="La fonction choisie">
+      <div class="p-texte" id="p-texte"></div><div class="p-visuel" id="p-visuel"></div>
+      <button class="fermer" id="fermer" aria-label="Fermer">✕</button>
+    </div></div></div>
+  </div>
+<template id="f-catalogue" data-statut="gratuit"><h3>Catalogue enrichi</h3><p>Votre fournisseur envoie des noms de fichiers. Trunk les reconnaît et leur donne une affiche, un résumé, une distribution et une classification d'âge.</p><div class="vis v-fichier"><div class="fichier">FR | Abominable (2019) 4K MULTI.mkv</div><div class="devient"><img class="mini-aff" src="m/site/affiches/abominable.webp" alt=""><div><b>Abominable</b><small>2019 · 1 h 37 · Animation</small><span class="jeton">TP</span></div></div></div></template>
+<template id="f-fiches" data-statut="gratuit"><h3>Fiches détaillées</h3><p>Chaque film et chaque série a sa fiche : note, année, durée, genres, synopsis et distribution. Les séries s'y rangent par saisons et par épisodes.</p><div class="vis v-pan-y"><img src="m/site/ecrans/crop-fiche.webp" alt="La fiche d'Abominable dans Trunk"></div></template>
+<template id="f-recherche" data-statut="gratuit"><h3>Recherche</h3><p>Un champ pour chercher dans toute la playlist : un film, une série, une chaîne. Et des genres en images pour parcourir sans savoir quoi chercher.</p><div class="vis v-pan-y"><img src="m/site/ecrans/crop-recherche.webp" alt="L'écran Recherche de Trunk"></div></template>
+<template id="f-categories" data-statut="gratuit"><h3>Catégories</h3><p>Les catégories de votre fournisseur, gardées telles quelles et rangées dans un menu. On passe de FR 4K UHD à Documentaires d'un geste.</p><div class="vis v-cat"><div class="menu-ios"><p>Catégories</p><span class="surb"></span><ul><li>FR 4K UHD<span>12</span></li><li>Cinéma<span>486</span></li><li>Séries<span>214</span></li><li>Documentaires<span>63</span></li><li>Enfants<span>128</span></li></ul></div></div></template>
+<template id="f-age" data-statut="gratuit"><h3>Classification d'âge</h3><p>Chaque titre affiche l'âge conseillé, selon la classification de votre pays. Tous publics, −12, −16 : on le sait avant de lancer.</p><div class="vis v-age"><ul><li><img src="m/site/affiches/abominable.webp" alt=""><b>Abominable</b><span class="jeton">TP</span></li><li><img src="m/site/affiches/mobland.webp" alt=""><b>MobLand</b><span class="jeton">−12</span></li><li><img src="m/site/affiches/obsession.webp" alt=""><b>Obsession</b><span class="jeton">−16</span></li></ul></div></template>
+<template id="f-tendances" data-statut="plus"><h3>Tendances de la semaine</h3><p>Ce que tout le monde regarde en ce moment. Une rangée numérotée, en tête des films et des séries.</p><div class="vis v-pan-x"><img src="m/site/ecrans/crop-tendances.webp" alt="La rangée Tendances de Trunk"></div></template>
+<template id="f-bande-annonce" data-statut="plus"><h3>Bandes-annonces</h3><p>Regardez la bande-annonce avant de lancer un film. Elle se joue sur la fiche, et peut démarrer toute seule si vous le souhaitez.</p><div class="vis v-ba"><img src="m/site/fond-film.webp" alt=""><span class="etiq">Bande-annonce</span><span class="lecture"></span><span class="rail"><i></i></span></div></template>
+<template id="f-similaires" data-statut="plus"><h3>Titres similaires</h3><p>Quoi regarder ensuite, à partir de ce que vous aimez. Sur chaque fiche, une rangée de films ou de séries proches.</p><div class="vis v-sim"><p>Films similaires</p><div class="rang"><img class="mini-aff" src="m/site/affiches/balto.webp" alt=""><img class="mini-aff" src="m/site/affiches/chicken-run.webp" alt=""><img class="mini-aff" src="m/site/affiches/22-terre.webp" alt=""><img class="mini-aff" src="m/site/affiches/ballerina.webp" alt=""></div></div></template>
+<template id="f-ma-liste" data-statut="plus"><h3>Ma liste</h3><p>Mettez de côté ce que vous voulez voir plus tard. Un geste sur le + d'une fiche, et le titre vous attend dans la rangée Ma liste.</p><div class="vis v-liste"><div class="carte"><img class="mini-aff" src="m/site/affiches/abominable.webp" alt=""><span class="rond"><i class="p">+</i><i class="c">✓</i></span></div><span class="toast">Ajouté à Ma liste</span></div></template>
+<template id="f-guide" data-statut="gratuit"><h3>Guide TV</h3><p>Sous chaque chaîne, ce qui passe maintenant et ce qui suit, avec la barre qui montre où en est l'émission. Chaque chaîne prend la couleur de son logo.</p><div class="vis v-guide"><div class="chaine tf1"><img src="m/chaines/tf1.png" alt=""><div><div class="nom">FR 4K- TF1 UHD</div><div class="now"><b>MAINTENANT</b><span>JT 13h</span></div><div class="barre"><i style="width:68%"></i></div><div class="suiv">Suivant : Petits plats en équilibre</div></div></div></div></template>
+<template id="f-favoris" data-statut="plus"><h3>Chaînes favorites</h3><p>Vos chaînes préférées, toujours en haut. Une étoile suffit pour les épingler en tête du Direct.</p><div class="vis v-fav"><div class="liste"><div class="ch tf1"><img src="m/chaines/tf1.png" alt=""><b>TF1</b><span class="etoile">★</span></div><div class="ch france2"><img src="m/chaines/france2.png" alt=""><b>France 2</b><span class="etoile">★</span></div><div class="ch france5"><img src="m/chaines/france5.png" alt=""><b>France 5</b><span class="etoile">★</span></div></div></div></template>
+<template id="f-historique" data-statut="plus"><h3>Historique</h3><p>Retrouvez tout ce que vous avez regardé. Les chaînes récentes vous attendent en tête du Direct.</p><div class="vis v-histo"><div class="liste"><p>RÉCEMMENT VISIONNÉ</p><div class="ch france5"><img src="m/chaines/france5.png" alt=""><b>France 5</b><small>il y a 5 min</small></div><div class="ch tf1"><img src="m/chaines/tf1.png" alt=""><b>TF1</b><small>hier</small></div><div class="ch m6"><img src="m/chaines/m6.png" alt=""><b>M6</b><small>lundi</small></div></div></div></template>
+<template id="f-langues" data-statut="gratuit"><h3>Six langues</h3><p>Français, anglais, espagnol, allemand, italien et portugais du Brésil. Les affiches et les résumés suivent la langue de l'app.</p><div class="vis v-langues"><div class="mots"><span>Regarder<small>Français</small></span><span>Watch<small>English</small></span><span>Ver<small>Español</small></span><span>Ansehen<small>Deutsch</small></span><span>Guarda<small>Italiano</small></span><span>Assistir<small>Português</small></span></div></div></template>
+<template id="f-icloud" data-statut="bientot"><h3>Synchronisation iCloud</h3><p>Votre liste, votre historique et l'endroit où vous en êtes, les mêmes sur tous vos appareils. Cette fonction arrive bientôt.</p><div class="vis v-venir"><span class="tampon">Bientôt</span><div class="v-sync"><span>iPhone</span><span class="lien"><i></i></span><span>iPad</span></div><p class="v-titre">Ma liste · Historique · Reprise</p></div></template>
+<template id="f-ipad" data-statut="bientot"><h3>Trunk pour iPad</h3><p>Trunk sur iPad, avec une mise en page pensée pour le grand écran. Il arrive bientôt sur l'App Store.</p><div class="vis v-venir v-grand"><span class="tampon">Bientôt</span><div class="mosaique"><img src="m/site/affiches/unabomber.webp" alt=""><img src="m/site/affiches/obsession.webp" alt=""><img src="m/site/affiches/abominable.webp" alt=""><img src="m/site/affiches/mobland.webp" alt=""><img src="m/site/affiches/reacher.webp" alt=""><img src="m/site/affiches/carnets.webp" alt=""><img src="m/site/affiches/spider-man.webp" alt=""><img src="m/site/affiches/ted-lasso.webp" alt=""><img src="m/site/affiches/belle-bete.webp" alt=""><img src="m/site/affiches/blitz.webp" alt=""><img src="m/site/affiches/femme-menage.webp" alt=""><img src="m/site/affiches/one-piece.webp" alt=""><img src="m/site/affiches/black-adam.webp" alt=""><img src="m/site/affiches/tornado.webp" alt=""><img src="m/site/affiches/balto.webp" alt=""><img src="m/site/affiches/arctic.webp" alt=""></div><p class="v-titre">Trunk pour iPad</p></div></template>
+<template id="f-formats" data-statut="gratuit"><h3>Lecteur tous formats</h3><p>Le lecteur de Trunk lit le flux tel qu'il arrive : HLS, MPEG-TS, MP4 ou MKV, en H.264 comme en HEVC. Aucune autre app à installer.</p><div class="vis v-formats"><span class="centre"></span><span class="f" style="left:10%;top:15%;animation-delay:0s">HLS</span><span class="f" style="left:40%;top:7%;animation-delay:1s">MPEG-TS</span><span class="f" style="left:73%;top:15%;animation-delay:2s">MP4</span><span class="f" style="left:79%;top:45%;animation-delay:3s">MKV</span><span class="f" style="left:70%;top:75%;animation-delay:4s">H.264</span><span class="f" style="left:42%;top:83%;animation-delay:5s">HEVC</span><span class="f" style="left:13%;top:75%;animation-delay:6s">AAC</span><span class="f" style="left:6%;top:45%;animation-delay:7s">AC-3</span></div></template>
+<template id="f-reprise" data-statut="plus"><h3>Reprise de lecture</h3><p>Reprenez exactement là où vous vous êtes arrêté. Trunk retient l'endroit de chaque film et de chaque épisode.</p><div class="vis v-reprise"><div class="carte"><img class="mini-aff" src="m/site/affiches/abominable.webp" alt=""><div><b>Abominable</b><div class="rail"><i style="width:65%"></i></div><small>Arrêté à 1:03:12</small></div></div><span class="pill-or">▶ Reprendre à 1:03:12</span></div></template>
+<template id="f-pistes" data-statut="plus"><h3>Sous-titres et pistes audio</h3><p>Choisissez la langue du son et des sous-titres parmi celles que le flux contient. VF, VO, sous-titres français ou anglais : un menu suffit.</p><div class="vis v-pistes"><img src="m/site/fond-film.webp" alt=""><div class="choix"><span>Français</span><span>English</span><span>Español</span></div><div class="st"><span>Tu crois qu'il reviendra ?</span><span>Do you think he'll come back?</span><span>¿Crees que volverá?</span></div></div></template>
+<template id="f-airplay" data-statut="plus"><h3>AirPlay</h3><p>Envoyez l'image sur un téléviseur compatible AirPlay, directement depuis le lecteur. La lecture se pilote toujours depuis l'iPhone.</p><div class="vis v-anneau"><div class="ecran-crop"><img src="m/site/ecrans/crop-airplay.webp" alt="Le bouton AirPlay du lecteur de Trunk"><span class="anneau" style="left:27.6%;top:19.5%"></span></div></div></template>
+<template id="f-vitesse" data-statut="gratuit"><h3>Vitesse de lecture</h3><p>De 0,5× à 2×, pour rattraper un épisode ou savourer une scène. Le réglage se fait dans le lecteur, sans l'arrêter.</p><div class="vis v-vitesse"><div class="menu-ios"><p>Vitesse de lecture</p><ul><li>0,5×</li><li>0,75×</li><li>Normale (1×)</li><li>1,25×</li><li>1,5×</li><li>2×</li></ul></div></div></template>
+<template id="f-verrou" data-statut="gratuit"><h3>Verrouillage de l'écran</h3><p>Un cadenas fige l'écran pendant la lecture : plus de touche accidentelle. On le déverrouille d'un geste.</p><div class="vis v-anneau"><div class="ecran-crop"><img src="m/site/ecrans/crop-verrou.webp" alt="Le cadenas du lecteur de Trunk"><span class="anneau" style="left:88.4%;top:19.5%"></span></div><span class="statut-lect">Écran verrouillé — touchez le cadenas pour déverrouiller</span></div></template>
+<template id="f-reconnexion" data-statut="gratuit"><h3>Reconnexion automatique</h3><p>Si le flux coupe, Trunk relance la lecture tout seul, plusieurs fois s'il le faut. Sans réseau, il attend son retour et repart.</p><div class="vis v-reco"><img src="m/site/fond-film.webp" alt=""><span class="etat"><i class="roue"></i>Reconnexion… (1/3)</span><span class="etat"><i class="roue"></i>Reconnexion… (2/3)</span><span class="etat"><i class="ok"></i>Connexion rétablie — relance…</span></div></template>
+<template id="f-fluidite" data-statut="gratuit"><h3>Fluidité de lecture</h3><p>Au plus près du direct, équilibré ou sans interruption : vous choisissez entre l'avance et la stabilité. Utile si l'image se fige par moments.</p><div class="vis v-flui"><div class="opts"><div class="o"><b>Au plus près du direct</b><small>Retard minimal sur le direct.</small></div><div class="o"><b>Équilibré</b><small>Le bon compromis dans la plupart des cas.</small></div><div class="o"><b>Sans interruption</b><small>Image beaucoup plus stable.</small></div></div></div></template>
+<template id="f-depannage" data-statut="gratuit"><h3>Dépannage</h3><p>Quand un flux ne démarre pas, Trunk vérifie votre connexion, vos identifiants et le serveur de votre fournisseur. Il vous dit d'où vient la panne, et à qui s'adresser.</p><div class="vis v-diag"><div class="liste"><div class="l">Votre connexion internet<em class="vert">répond</em></div><div class="l">Vos identifiants<em class="vert">valides</em></div><div class="l">Le serveur de votre fournisseur<em class="rouge">ne répond pas</em></div><div class="verdict">Le problème vient de votre fournisseur</div></div></div></template>
+<template id="f-sources" data-statut="gratuit"><h3>M3U et Xtream Codes</h3><p>Ajoutez votre source comme votre fournisseur la donne : une adresse de playlist M3U ou des identifiants Xtream Codes. Trunk s'occupe du reste.</p><div class="vis v-src"><div class="bloc"><div class="seg"><i></i><span>M3U</span><span>Xtream Codes</span></div><div class="champs"><div class="vue-src"><label>Adresse de la playlist<b>http://fournisseur.tv/get.php?…</b></label></div><div class="vue-src"><label>Serveur<b>http://fournisseur.tv:8080</b></label><label>Identifiant<b>utilisateur</b></label><label>Mot de passe<b>••••••••</b></label></div></div></div></div></template>
+<template id="f-playlists" data-statut="plus"><h3>Playlists illimitées</h3><p>Ajoutez autant de sources que vous voulez, et passez de l'une à l'autre d'un geste. La première playlist reste gratuite.</p><div class="vis v-pl"><div class="bulles"><span class="b"><i>S</i>Salon</span><span class="b"><i>V</i>Vacances</span><span class="b"><i>F</i>Famille</span><span class="b nouv"><i>+</i>Nouvelle</span></div></div></template>
+<template id="f-trousseau" data-statut="gratuit"><h3>Le Trousseau de l'iPhone</h3><p>Vos identifiants sont rangés dans le Trousseau d'iOS, comme vos mots de passe. Seul le serveur de votre fournisseur les reçoit.</p><div class="vis v-cle"><div class="champ">Mot de passe<b>••••••••</b></div><svg class="cadenas-g" viewBox="0 0 32 32" aria-hidden="true"><path class="anse" d="M10 15v-4a6 6 0 0 1 12 0v4"/><rect x="7" y="15" width="18" height="13" rx="3"/></svg><span class="legende">Trousseau de l'iPhone</span></div></template>
+<template id="f-chiffre" data-statut="gratuit"><h3>Catalogue chiffré</h3><p>Le catalogue que Trunk construit reste sur votre iPhone, chiffré. Aucun compte, aucun serveur à nous.</p><div class="vis v-chif"><div class="lignes"><div class="lg"><span class="clair">Abominable · 2019 · Animation</span><span class="chiffre">9f3a 0c7e b41d 22a8 e6f0 17</span></div><div class="lg"><span class="clair">MobLand · Saison 1 · Crime</span><span class="chiffre">4be1 90d3 7a2c c58f 03e9 a6</span></div><div class="lg"><span class="clair">FR 4K- TF1 UHD · Direct</span><span class="chiffre">e07d 3f91 6b0a 8c24 d1f5 5e</span></div></div></div></template>
+<template id="f-wifi" data-statut="gratuit"><h3>Wi-Fi uniquement</h3><p>Un réglage pour ne jamais lire en données mobiles. Votre forfait reste intact.</p><div class="vis v-wifi"><div class="ligne-r"><div><b>Wi-Fi uniquement</b><small>Ne pas streamer via données mobiles</small></div><span class="inter"></span></div></div></template>
+<template id="f-apple-tv" data-statut="bientot"><h3>Trunk pour Apple TV</h3><p>Trunk sur Apple TV, à la télécommande, sur le grand écran du salon. Il arrive bientôt sur l'App Store.</p><div class="vis v-venir v-tv"><span class="tampon">Bientôt</span><div class="rang"><img class="mini-aff" src="m/site/affiches/reacher.webp" alt=""><img class="mini-aff" src="m/site/affiches/mobland.webp" alt=""><img class="mini-aff" src="m/site/affiches/abominable.webp" alt=""><img class="mini-aff" src="m/site/affiches/carnets.webp" alt=""><img class="mini-aff" src="m/site/affiches/unabomber.webp" alt=""></div><p class="v-titre">Trunk pour Apple TV</p></div></template>
+</section>
+
+<section class="interlude" id="interlude" hidden><div class="w"></div></section>
+
+<section id="catalogue" class="s" data-pastille="Catalogue" data-icone="catalogue"><div class="w">
+  <span class="etiquette apparait">● Le catalogue</span>
+  <h2 class="apparait">Des fichiers devenus des affiches.</h2>
+  <p class="texte apparait" style="--retard:.08s">Chaque film et chaque série s'enrichit tout seul d'une affiche, d'un
+  synopsis, du casting et de la classification d'âge. Ce que votre fournisseur n'envoie
+  pas, Trunk va le chercher.</p>
+  <div class="profondeur" id="profondeur">
+    <span class="contrejour" style="--t:var(--champagne);--y:46%;--d:980px" aria-hidden="true"></span>
+    <div class="tel p-loin"><img src="m/site/ecrans/series.webp" alt=""></div>
+    <div class="tel p-milieu"><img src="m/site/ecrans/fiche.webp" alt=""></div>
+    <div class="tel p-pres compare" id="compare"><div class="ecran">
+      <img src="m/site/ecrans/accueil2.webp" alt="La même playlist dans Trunk, avec ses affiches">
+      <div class="brut" aria-hidden="true">
+        <div class="titre">Films</div>
+        <ul><li>Unabomber</li><li>Obsession</li><li>Abominable</li><li>Superman</li><li>Lilo &amp; Stitch</li><li>F1</li><li>Dragons</li><li>Jurassic World : Renaissance</li><li>Mission: Impossible</li><li>Les 4 Fantastiques</li><li>Une bataille après l'autre</li></ul>
+      </div>
+      <input type="range" min="0" max="100" value="50" step="0.5" id="glisser" aria-label="Comparer la liste du fournisseur et Trunk">
+      <div class="poignee"><span class="verre bouton-verre" aria-hidden="true">‹ ›</span></div>
+    </div></div>
+  </div>
+  <p class="legendes"><span>Votre fournisseur</span><b>‹ Faites glisser : voilà la différence ›</b><span>Trunk</span></p>
+</div></section>
+
+<section id="direct" class="s" data-pastille="Direct" data-icone="direct"><div class="w">
+  <span class="etiquette apparait">● Le direct</span>
+  <h2 class="apparait">Ce qui passe, sous chaque chaîne.</h2>
+  <p class="texte apparait" style="--retard:.08s">Le programme en cours et le suivant, avec la barre qui montre où en
+  est l'émission. Chaque chaîne prend la couleur de son logo, comme dans l'app.</p>
+  <span class="contrejour" style="--t:var(--miel);--x:30%;--y:70%;--d:920px" aria-hidden="true"></span>
+  <div class="plaque verre apparait" data-vitesse="-.05">
+    <div class="chaine tf1 apparait" style="--retard:0.00s"><img src="m/chaines/tf1.png" alt="TF1"><div><div class="nom">FR 4K- TF1 UHD</div>
+      <div class="now"><b>MAINTENANT</b><span>JT 13h</span></div><div class="barre"><i style="width:68%"></i></div>
+      <div class="suiv">Suivant : Petits plats en équilibre</div></div></div>
+    <div class="chaine france2 apparait" style="--retard:0.08s"><img src="m/chaines/france2.png" alt="France 2"><div><div class="nom">FR 4K- FRANCE 2</div>
+      <div class="now"><b>MAINTENANT</b><span>Journal 13h00</span></div><div class="barre"><i style="width:84%"></i></div>
+      <div class="suiv">Suivant : Journal Météo Climat</div></div></div>
+    <div class="chaine france3 apparait" style="--retard:0.16s"><img src="m/chaines/france3.png" alt="France 3"><div><div class="nom">FR 4K- FRANCE 3</div>
+      <div class="now"><b>MAINTENANT</b><span>Météo à la carte</span></div><div class="barre"><i style="width:64%"></i></div>
+      <div class="suiv">Suivant : Météo à la carte (la suite)</div></div></div>
+    <div class="chaine france5 apparait" style="--retard:0.24s"><img src="m/chaines/france5.png" alt="France 5"><div><div class="nom">FR 4K- FRANCE 5</div>
+      <div class="now"><b>MAINTENANT</b><span>L'oeil et la main</span></div><div class="barre"><i style="width:96%"></i></div>
+      <div class="suiv">Suivant : Silence, ça pousse !</div></div></div>
+  </div>
+</div></section>
+
+<section id="donnees" class="s" data-pastille="Vie privée" data-icone="verrou"><div class="w">
+  <span class="contrejour" style="--t:var(--champagne);--y:55%;--d:1000px" aria-hidden="true"></span>
+  <div class="manifeste verre apparait">
+    <span class="etiquette">● Ce qui reste chez vous</span>
+    <h2>Aucun compte. Aucune publicité. Aucun suivi.</h2>
+    <p>Vos identifiants restent dans le Trousseau de votre iPhone, comme vos mots de
+    passe. Le catalogue est chiffré sur l'appareil. Ni inscription, ni serveur à nous.</p>
+  </div>
+</div></section>
+
+<section id="tarif" class="s" data-pastille="Tarif" data-icone="tarif"><div class="w">
+  <span class="etiquette apparait">● Le tarif</span>
+  <h2 class="apparait">Gratuit, et précisément.</h2>
+  <span class="contrejour" style="--t:var(--dore);--x:74%;--y:68%;--d:860px" aria-hidden="true"></span>
+  <div class="deux-verres">
+    <div class="verre libre apparait"><h3>Trunk</h3><p class="px">Gratuit, pour toujours</p><ul>
+      <li>Une playlist</li><li>Lecture illimitée, sans limite de temps</li><li>Films, Séries, Direct et Recherche</li>
+      <li>Catalogue enrichi et guide TV</li><li>Aucune publicité</li></ul></div>
+    <div class="verre plus apparait" style="--retard:.12s"><h3>Trunk Plus</h3><p class="px">14 jours d'essai, puis au mois ou à l'année</p><ul>
+      <li>Bandes-annonces et titres similaires</li><li>Tendances de la semaine</li><li>Ma liste et chaînes favorites</li>
+      <li>Historique et reprise de lecture</li><li>AirPlay, sous-titres et pistes audio</li><li>Playlists illimitées</li></ul></div>
+  </div>
+  <p class="mentions">L'abonnement se renouvelle automatiquement sauf résiliation au moins
+  24 heures avant la fin de la période. Il se gère dans les réglages de votre compte Apple.</p>
+</div></section>
+
+<section id="questions" class="s" data-pastille="Questions" data-icone="questions"><div class="w">
+  <span class="etiquette apparait">● Questions</span>
+  <h2 class="apparait">Avant de commencer.</h2>
+  <span class="contrejour" style="--t:var(--ambre);--x:36%;--y:66%;--d:900px" aria-hidden="true"></span>
+  <div class="faq verre apparait">
+    <details open><summary>Trunk fournit-il des chaînes ?</summary><p>Non. Trunk est un lecteur. Les chaînes, films et séries viennent de la source IPTV que vous y ajoutez.</p></details>
+    <details><summary>Que faut-il pour l'utiliser ?</summary><p>Une playlist M3U ou des identifiants Xtream Codes, et un iPhone sous iOS 26.</p></details>
+    <details><summary>Où vont mes identifiants ?</summary><p>Dans le Trousseau d'iOS. Seul le serveur de votre fournisseur les reçoit.</p></details>
+    <details><summary>En quelles langues ?</summary><p>Français, anglais, espagnol, allemand, italien et portugais du Brésil.</p></details>
+  </div>
+</div></section>
+</main>
+
+<section class="fin" id="appareils" data-pastille="Bientôt" data-icone="bientot"><div class="w">
+  <h2 class="apparait">Bientôt sur tous vos appareils.</h2>
+  <ul class="noms apparait" style="--retard:.1s"><li>iPad</li><li>Mac</li><li>Apple TV</li></ul>
+  <p class="avant apparait" style="margin-top:56px">Trunk arrive d'abord sur iPhone.</p>
+  <span class="capsule verre apparait" style="margin-top:22px">Bientôt sur l'App Store</span>
+</div></section>
+
+<footer><div class="w">
+  <div><h4>Trunk</h4><p class="avis">Trunk est un lecteur multimédia. L'app ne fournit, n'héberge ni ne distribue aucun contenu : vous êtes seul responsable des playlists que vous y ajoutez. Éditeur : Aissam Ihaddadene · contact@trunkiptv.app</p></div>
+  <div><h4>Informations</h4><ul><li><a href="confidentialite.html">Confidentialité</a></li><li><a href="cgu.html">Conditions d'utilisation</a></li><li><a href="mailto:contact@trunkiptv.app">Contact</a></li></ul></div>
+  <p class="marques">Apple, iPhone, iPad, Mac, Apple TV, AirPlay et iCloud sont des marques d'Apple Inc., déposées aux États-Unis et dans d'autres pays et régions. App Store est une marque de service d'Apple Inc. IOS est une marque ou une marque déposée de Cisco aux États-Unis et dans d'autres pays, utilisée sous licence. Trunk n'est ni affilié à Apple, ni approuvé par Apple.<br>Affiches et résumés : The Movie Database (TMDB). Ce produit utilise l'API de TMDB mais n'est ni approuvé ni certifié par TMDB.</p>
+</div></footer>
+
+<div class="pastille" id="pastille" aria-hidden="true"><span class="ico" id="p-ico"></span><span class="nom" id="p-nom"></span><span class="points" id="p-points"><span class="lentille" id="p-lentille"></span></span></div>
+
+<script src="m/site/site.js?v=1791157100"></script>
 </body>
 </html>
