@@ -1,0 +1,61 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="demo101" tvg-logo="" group-title="News",DW English
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/101.m3u8
+#EXTINF:-1 tvg-id="demo102" tvg-logo="" group-title="News",DW Español
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/102.m3u8
+#EXTINF:-1 tvg-id="demo103" tvg-logo="" group-title="News",DW Arabic
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/103.m3u8
+#EXTINF:-1 tvg-id="demo104" tvg-logo="" group-title="News",Al Jazeera English
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/104.m3u8
+#EXTINF:-1 tvg-id="demo105" tvg-logo="" group-title="News",Al Jazeera Arabic
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/105.m3u8
+#EXTINF:-1 tvg-id="demo106" tvg-logo="" group-title="News",Bloomberg TV+ US
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/106.m3u8
+#EXTINF:-1 tvg-id="demo107" tvg-logo="" group-title="News",Bloomberg TV+ Europe
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/107.m3u8
+#EXTINF:-1 tvg-id="demo108" tvg-logo="" group-title="Lifestyle & Culture",Red Bull TV
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/108.m3u8
+#EXTINF:-1 tvg-id="demo109" tvg-logo="" group-title="Lifestyle & Culture",Arirang TV
+https://trunk-demo.demo-server.workers.dev/live/demo/demo/109.m3u8
+#EXTINF:-1 tvg-logo="" group-title="German Expressionism",Nosferatu le vampire (1922)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/201.mp4
+#EXTINF:-1 tvg-logo="" group-title="German Expressionism",Le Cabinet du docteur Caligari (1920)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/202.mp4
+#EXTINF:-1 tvg-logo="" group-title="German Expressionism",Le Cabinet des figures de cire (1924)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/205.mp4
+#EXTINF:-1 tvg-logo="" group-title="Silent Classics",Le Lys brisé (1919)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/214.mp4
+#EXTINF:-1 tvg-logo="" group-title="Silent Classics",Les Deux Orphelines (1921)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/215.mp4
+#EXTINF:-1 tvg-logo="" group-title="Silent Classics",À travers l'orage (1920)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/216.mp4
+#EXTINF:-1 tvg-logo="" group-title="Adventure",Le signe de Zorro (1920)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/217.mp4
+#EXTINF:-1 tvg-logo="" group-title="Adventure",Ben-Hur (1925)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/218.mp4
+#EXTINF:-1 tvg-logo="" group-title="Early Cinema",Le Voyage dans la Lune (1902)
+https://trunk-demo.demo-server.workers.dev/movie/demo/demo/219.mp4
+#EXTINF:-1 tvg-logo="" group-title="Early Cinema",Le Voyage à travers l'impossible (1904)
+https://archive.org/download/The_Impossible_Voyage/The_Impossible_Voyage.mp4
+#EXTINF:-1 tvg-logo="" group-title="Documentaries",Nanouk l'Esquimau (1922)
+https://archive.org/download/nanookOfTheNorth1922/NanookOfTheNorth1922.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E01
+https://trunk-demo.demo-server.workers.dev/series/demo/demo/401.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E02
+https://trunk-demo.demo-server.workers.dev/series/demo/demo/402.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E03
+https://trunk-demo.demo-server.workers.dev/series/demo/demo/403.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E04
+https://trunk-demo.demo-server.workers.dev/series/demo/demo/404.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E05
+https://trunk-demo.demo-server.workers.dev/series/demo/demo/405.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E06
+https://trunk-demo.demo-server.workers.dev/series/demo/demo/406.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E07
+https://trunk-demo.demo-server.workers.dev/series/demo/demo/407.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E08
+https://trunk-demo.demo-server.workers.dev/series/demo/demo/408.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E09
+https://archive.org/download/lesVampires1915Episode9-thePoisoner/9LesVampires-lhommeDesPoisons_512kb.mp4
+#EXTINF:-1 tvg-logo="" group-title="Classic Series",Les Vampires S01 E10
+https://archive.org/download/lesVampires1915Episode10-theTerribleWedding/10LesVampires-lesNocesSanglantes_512kb.mp4
